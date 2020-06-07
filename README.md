@@ -22,4 +22,38 @@
 ## ENS
 depressao.ens
 
+## Resenha
+Conforme instruções o Smart Contract deve conter:
+- Pelo menosum método pago e um não pago
+- Pelo menos um método não público
+- Pelo menos uma struct, um mapping e um array
+- Deploy em uma rede de teste (Ropsten, Kovan)
+- Smart Contract(s) verificado(s) https://ropsten.etherscan.io/verifyContract
+- ENS para o(s) Smart Contract(s)
+- Projeto documentado e entregue no github
+
+## Métodos
+### Pago:
+-- payPartner(address _to) -> Método de pagamento entre Partners
+--- Requer que ambos os address existam como partner no contrato. Deve usar o método insPartner(address _address, string memory _name) para inclusão dos partners.
+
+### Não pagos:
+-- partnerExists -> Verifica existência do address como partner no contrato.
+-- getPartnerName -> Retorna o nome do Partner
+-- getPartnerNameList -> Retorna lista de todos os partners
+-- getPartnerAmount -> Retorna amount do partner
+-- insPartner -> Insere partner
+
+### Privado
+-- partnerExists
+
+## Struct
+- PartnerStruct
+
+## Mapping
+- partnerMap
+- amountMap
+
+## Array
+- partners
 
